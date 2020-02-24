@@ -19,7 +19,11 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     
     todoList.addEventListener("click", function(event){
-        if (){} else if (){}
+        if (event.target.tagName.toLowerCase() === 'li'){
+            event.target.style.textDecoration = 'line-through';
+        } else if (event.target.tagName.toLowerCase() === 'button'){
+            event.target.parentNode.remove(); 
+        }
     })
     
 })
