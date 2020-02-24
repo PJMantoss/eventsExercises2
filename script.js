@@ -57,4 +57,10 @@ document.addEventListener("DOMContentLoaded", function(){
         
         todoList.appendChild(newTodo);
     }
+    
+    todoForm.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        let newTodo = document.createElement("li");
+    });
 })
