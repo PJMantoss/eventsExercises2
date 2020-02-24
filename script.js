@@ -75,4 +75,9 @@ document.addEventListener("DOMContentLoaded", function(){
         savedTodo.push({task: newTodo.innerHTML,isCompleted: false});
         localStorage.setItem("todos", JSON.stringify(savedTodo));
     });
+    
+    todoList.addEventListener("click", function(){
+        let clickedListItem = event.target;
+    });
+    
 })
