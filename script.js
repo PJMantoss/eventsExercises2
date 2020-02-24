@@ -41,5 +41,12 @@ the page you do not lose what you have added to the list! As a super bonus,
 */
 document.addEventListener("DOMContentLoaded", function(){
     let todoForm = document.getElementById("newTodoForm");
-    let todoList = document.getElementById("todoList")
+    let todoList = document.getElementById("todoList");
+    
+    //retrieve from localStorage
+    let savedTodo = JSON.parse(localStorage.getItem("todos")) || [];
+    for (let i=0; i < savedTodo.length; i++){
+        let newTodo = document.createElement("li");
+        newTodo.innerHTML = savedTodo[i].task;
+    }
 })
