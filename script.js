@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(){
             clickedListItem.style.textDecoration = "line-through";
             clickedListItem.isCompleted = true;
         } else{
-            clickedListItem.style.textDecoration = none;
+            clickedListItem.style.textDecoration = "none";
             clickedListItem.isCompleted = false;
         }
         
