@@ -54,5 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (newTodo.isCompleted){
             newTodo.style.textDecoration = 'line-through';
         }
+        
+        todoList.appendChild(newTodo);
     }
 })
