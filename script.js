@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", function(){
     
 })
 
-
+/*Q2.
+Using localStorage, try to store your todos so that if you refresh
+the page you do not lose what you have added to the list! As a super bonus,
+ try to also save todos that you have marked as complete!
+*/
 document.addEventListener("DOMContentLoaded", function(){
     let todoForm = document.getElementById("newTodoForm");
     let todoList = document.getElementById("todoList")
