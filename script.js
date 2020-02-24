@@ -86,6 +86,14 @@ document.addEventListener("DOMContentLoaded", function(){
             clickedListItem.style.textDecoration = none;
             clickedListItem.isCompleted = false;
         }
+        
+        //breaks for duplicates
+        for (let i=0; i < savedTodo.length; i++){
+            if (savedTodo[i].task === clickedListItem.innerHTML){
+                savedTodo[i].isCompleted = clickedListItem.isCompleted;
+                localStorage.setItem("todos", JSON.stringify(savedTodo));
+            }
+        }
     });
     
 })
