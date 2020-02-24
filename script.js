@@ -14,5 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         newTodo.appendChild(removeBtn);
         todoList.appendChild(newTodo);
+        
+        todoForm.reset();
     })
 })
