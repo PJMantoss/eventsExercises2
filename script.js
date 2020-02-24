@@ -4,5 +4,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     todoForm.addEventListener("submit", function(event){
         event.preventDefault();
+        
+        let removeBtn = document.createElement("button");
+
+        removeBtn.innerHTML = "X";
     })
 })
