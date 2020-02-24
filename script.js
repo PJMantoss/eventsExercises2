@@ -70,5 +70,9 @@ document.addEventListener("DOMContentLoaded", function(){
         todoForm.reset();
 
         todoList.appendChild(newTodo);
+        
+        //saved to localStorage
+        savedTodo.push({task: newTodo.innerHTML,isCompleted: false});
+        localStorage.setItem("todos", JSON.stringify(savedTodo));
     });
 })
