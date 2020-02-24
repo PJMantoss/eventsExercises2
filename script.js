@@ -48,5 +48,11 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let i=0; i < savedTodo.length; i++){
         let newTodo = document.createElement("li");
         newTodo.innerHTML = savedTodo[i].task;
+        newTodo.innerHTML = savedTodo[i].task;
+        newTodo.isCompleted = savedTodo[i].isCompleted ? true : false;
+
+        if (newTodo.isCompleted){
+            newTodo.style.textDecoration = 'line-through';
+        }
     }
 })
