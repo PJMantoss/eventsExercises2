@@ -17,4 +17,9 @@ document.addEventListener("DOMContentLoaded", function(){
         
         todoForm.reset();
     })
+    
+    todoList.addEventListener("click", function(event){
+        if (){} else if (){}
+    })
+    
 })
