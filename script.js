@@ -8,5 +8,11 @@ document.addEventListener("DOMContentLoaded", function(){
         let removeBtn = document.createElement("button");
 
         removeBtn.innerHTML = "X";
+        
+        let newTodo = document.createElement("li");
+        newTodo.innerHTML = document.getElementById("task").value;
+
+        newTodo.appendChild(removeBtn);
+        todoList.appendChild(newTodo);
     })
 })
