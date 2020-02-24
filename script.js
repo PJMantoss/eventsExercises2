@@ -62,5 +62,13 @@ document.addEventListener("DOMContentLoaded", function(){
         event.preventDefault();
 
         let newTodo = document.createElement("li");
+        let taskValue = document.getElementById("task").value;
+
+        newTodo.innerHTML = taskValue;
+        newTodo.isCompleted = false;
+
+        todoForm.reset();
+
+        todoList.appendChild(newTodo);
     });
 })
